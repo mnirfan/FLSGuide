@@ -41,11 +41,25 @@
                         android:layout_marginBottom="10dp"
                         android:text="Beatae voluptatem quibusdam repellat perspiciatis temporibus incidunt et dicta. Quae eum sapiente ex molestiae. Harum vitae minus saepe qui ad recusandae voluptate..." />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="10 Mei 2017 09:00 WIB"
-                        />
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_time"
+                            android:tint="@color/colortext"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 Mei 2017 09:00 WIB" />
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
@@ -78,11 +92,24 @@
                         android:layout_marginBottom="10dp"
                         android:text="Beatae voluptatem quibusdam repellat perspiciatis temporibus incidunt et dicta. Quae eum sapiente ex molestiae. Harum vitae minus saepe qui ad recusandae voluptate..." />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="10 Mei 2017 09:00 WIB"
-                        />
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_time"
+                            android:tint="@color/colortext"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 Mei 2017 09:00 WIB" />
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -115,11 +142,24 @@
                         android:layout_marginBottom="10dp"
                         android:text="Beatae voluptatem quibusdam repellat perspiciatis temporibus incidunt et dicta. Quae eum sapiente ex molestiae. Harum vitae minus saepe qui ad recusandae voluptate..." />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="10 Mei 2017 09:00 WIB"
-                        />
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_time"
+                            android:tint="@color/colortext"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 Mei 2017 09:00 WIB" />
+                    </LinearLayout>
 
                 </LinearLayout>
 
