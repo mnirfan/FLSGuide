@@ -1,30 +1,43 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
-    tools:context="com.nurulirfan.flsguide.AboutFragment">
+    tools:context="com.nurulirfan.flsguide.HomeFragment">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:text="FLS Guide" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="20dp"
-        android:layout_marginBottom="50dp"
-        android:text="v 0.1.0" />
-
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo."/>
+        android:layout_height="match_parent">
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="FLS Guide" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="Versi 0.1 Beta" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                style="@style/fontApplikasi"
+                android:text="FLS Guide atau Future Leader Summit Guide adalah sebuah aplikasi berbasis Android yang dibuat dan dirancang khusus untuk delegates Future Leader Summit. FLS Guide menerapkan teknologi berbasis client server. Sehingga Delegates akan selalu mendapatkan informasi terbaru tanpa harus melakukan update aplikasi."/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

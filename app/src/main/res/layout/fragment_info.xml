@@ -39,6 +39,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        style="@style/fontApplikasi"
                         android:text="Beatae voluptatem quibusdam repellat perspiciatis temporibus incidunt et dicta. Quae eum sapiente ex molestiae. Harum vitae minus saepe qui ad recusandae voluptate..." />
 
                     <LinearLayout
@@ -90,6 +91,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        style="@style/fontApplikasi"
                         android:text="Beatae voluptatem quibusdam repellat perspiciatis temporibus incidunt et dicta. Quae eum sapiente ex molestiae. Harum vitae minus saepe qui ad recusandae voluptate..." />
 
                     <LinearLayout
@@ -140,6 +142,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        style="@style/fontApplikasi"
                         android:text="Beatae voluptatem quibusdam repellat perspiciatis temporibus incidunt et dicta. Quae eum sapiente ex molestiae. Harum vitae minus saepe qui ad recusandae voluptate..." />
 
                     <LinearLayout
