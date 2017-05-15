@@ -22,6 +22,7 @@ android:
 
 before_script:
         - mkdir -p "$ANDROID_HOME/licenses"
+        - ls -lah
         - cp ./google-licenses/* "$ANDROID_HOME/licenses/"
 
 script:
