@@ -83,6 +83,28 @@ public class AgendaFragment extends Fragment {
                 }
         );
 
+        CardView ideatrial = (CardView) inputFragmentView.findViewById(R.id.cv_ideatrial);
+        ideatrial.setOnClickListener(
+                new CardView.OnClickListener(){
+                    @Override
+                    public void onClick(View view) {
+                        Intent i = new Intent(getContext(), IdeaTrialActivity.class);
+                        startActivity(i);
+                    }
+                }
+        );
+
+        CardView grandsummit = (CardView) inputFragmentView.findViewById(R.id.cv_grandsummit);
+        grandsummit.setOnClickListener(
+                new CardView.OnClickListener(){
+                    @Override
+                    public void onClick(View view) {
+                        Intent i = new Intent(getContext(), GrandSummitActivity.class);
+                        startActivity(i);
+                    }
+                }
+        );
+
         return inputFragmentView;
 
     }
