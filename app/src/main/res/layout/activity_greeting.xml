@@ -16,9 +16,53 @@
         android:textStyle="bold"
         android:layout_marginBottom="10dp"/>
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Beatae voluptatem quibusdam repellat perspiciatis temporibus incidunt et dicta. Quae eum sapiente ex molestiae. Harum vitae minus saepe qui ad recusandae voluptate. Quia optio sint id atque quos laudantium. Ut eos quasi nemo aliquid quia nostrum." />
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Sudah sejak lama Pemuda memiliki peran penting dalamp ergerakan bangsa Indonesia, hampir disegala bidang Pemuda berperan sebagai poros pembangunan dan penggerak ekonomi. Saat ini pergerakan Pemuda dihadapkan oleh tantangan yang berbeda yakni tantangan menghadapi Era Bonus Demografi, dalam kurun waktu kurang dari satu dekade jumlah usia produktif di Indonesia akan mencapai 2/3 dari jumlah penduduk yang ada. Tantangan ini harus kita selesaikan bersama dengan cara berkolaborasi satu sama lain, bahu- membahu untuk memaksimalkan segala yang ada dalam diri Pemuda dan berani menciptakan sesuatu untuk Indonesia yang lebih baik." />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="4dp"
+                android:text="Beberapa tahun belakangan dan tahun ke depan akan menjadi milik Generasi Millenial Tahun 2030 kita akan masuk era bonus demografi, dimana Generasi Millenial akan menjadi pemegang posisi strategis dalam pemerintahan, swasta, dan masyarakat. Generasi millenial dikenal dengan generasi yang tidak jauh dari gawai, narsistik, namun juga kreatif. Generasi ini bisa melihat sisi positif dari setiap situasi dan yakin generasinya akan megubah dunia. Pergerakan Generasi Millenial di Indonesia sudah mulai terlihat dengan tumbuhnya sektor ekonomi baru yakni Ekonomi Kreatif, berbagai macam inovasi yang dihadirkan generasi ini sukses memberikan warna baru bagi sektor ekonomi Indonesia." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Memasuki tahun ketujuh, secara konsisten Future Leader Summit (FLS) menjadi bagian dari pergerakan Pemuda Indonesia. Komitmen FLS sebagai wadah bertukar pikiran, menularkan semangat, menyelesaikan permasalahan, serta ajang kolaborasi satu sama lain telah membuahkan hasil manis. Tahun ini FLS mengusung slogan “Dare To Create” dengan tujuan memaksimalkan Generasi Millenial untuk berani menciptakan inovasi melalui kreatifitas, sehingga dapat meningkatkan ekonomi Indonesia khususnya Ekonomi Kreatif."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Selaras dengan hal positif yang Future Leader Summit berikan, kami mengajak berbagai instansi pemerintah, lembaga non pemerintah dan para Pemuda, termasuk Anda untuk memberikan dukungan secara langsung. Demi Indonesia yang lebih baik, kami mengharapkan dukungan Anda untuk merealisasikan kegiatan ini."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Terima Kasih"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:text="Best Regards, Jamal Radifan"/>
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>
