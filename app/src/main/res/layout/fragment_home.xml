@@ -38,15 +38,15 @@
                         android:layout_marginBottom="10dp"/>
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="172dp"
-                        android:src="@drawable/test_pm"
-                        android:layout_weight="0.35" />
+                        android:layout_height="142dp"
+                        android:src="@drawable/greeting_fls" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         style="@style/fontApplikasi"
-                        android:text="Beatae voluptatem quibusdam repellat perspiciatis temporibus incidunt et dicta. Quae eum sapiente ex molestiae. Harum vitae minus saepe qui ad recusandae voluptate. Quia optio sint id atque quos laudantium. Ut eos quasi nemo aliquid quia nostrum." />
+                        android:textAlignment="textStart"
+                        android:text="Sudah sejak lama Pemuda memiliki peran penting dalamp ergerakan bangsa Indonesia, hampir disegala bidang Pemuda berperan sebagai poros pembangunan dan penggerak ekonomi. Saat ini pergerakan Pemuda dihadapkan..." />
 
                 </LinearLayout>
 
