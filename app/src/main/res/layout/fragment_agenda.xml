@@ -20,121 +20,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <com.github.vipulasri.timelineview.TimelineView
-                            android:id="@+id/time_marker_soon"
-                            android:layout_width="70dp"
-                            android:layout_height="match_parent"
-                            app:markerSize="20dp"
-                            app:marker="@drawable/agenda_done"
-                            app:lineSize="5dp"
-                            app:line="@color/colorPrimary"/>
-
-                        <android.support.v7.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            style="@style/cardviewTimeline">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:padding="10dp">
-
-                                <!-- konten acara -->
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textSize="18dp"
-                                    android:textStyle="bold"
-                                    android:text="Welcoming Session"/>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/ic_wc_black_24dp"
-                                        android:tint="@color/colortext"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Bebas Rapi Beratribut FLS"/>
-
-                                </LinearLayout>
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/ic_time"
-                                        android:tint="@color/colortext"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="08:00 - 09.00 WIB"/>
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/nav_agenda"
-                                        android:tint="@color/colortext"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="13 Mei 2017"/>
-
-                                </LinearLayout>
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/ic_place_black_24dp"
-                                        android:tint="@color/colortext"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Balaikota Semarang"/>
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
-
-                        </android.support.v7.widget.CardView>
-
-                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -144,7 +29,6 @@
 
 
                         <com.github.vipulasri.timelineview.TimelineView
-                            android:id="@id/time_marker_soon"
                             android:layout_width="70dp"
                             android:layout_height="match_parent"
                             app:markerSize="20dp"
@@ -164,9 +48,9 @@
 
                                 <!-- gambar agenda -->
                                 <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:src="@drawable/welcoming_session"
+                                    android:layout_width="60dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/pre_event_new"
                                     android:layout_marginLeft="10dp"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginRight="-5dp"
@@ -185,7 +69,7 @@
                                         android:layout_height="wrap_content"
                                         android:textSize="18dp"
                                         android:textStyle="bold"
-                                        android:text="Welcoming Session"/>
+                                        android:text="PRE-EVENT"/>
                                     <!-- END// konten judul agenda -->
 
                                     <!-- Pakaian yang dipakai -->
@@ -204,7 +88,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Bebas Rapi Beratribut FLS"/>
+                                            android:text="Bebas, Rapi, Bersepatu Sopan"/>
 
                                     </LinearLayout>
                                     <!-- END// Pakaian yang dipakai -->
@@ -224,7 +108,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="08:00 - 09.00 WIB"/>
+                                            android:text="14:00 - 18.00 WIB"/>
 
                                     </LinearLayout>
                                     <!-- END// Jam Acara -->
@@ -244,10 +128,11 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="13 Mei 2017"/>
+                                            android:text="Sabtu, 20 Mei 2017"/>
 
                                     </LinearLayout>
                                     <!-- END// Tanggal Acara -->
+
                                     <!-- lokasi -->
                                     <LinearLayout
                                         android:layout_width="match_parent"
@@ -264,7 +149,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Balaikota Semarang"/>
+                                            android:text="Impala Space, Semarang"/>
 
                                     </LinearLayout>
                                     <!-- END// lokasi -->
@@ -284,14 +169,11 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-
-
                         <com.github.vipulasri.timelineview.TimelineView
-                            android:id="@+id/time_marker_current"
                             android:layout_width="70dp"
                             android:layout_height="match_parent"
                             app:markerSize="20dp"
-                            app:marker="@drawable/current_agenda"
+                            app:marker="@drawable/agenda_done"
                             app:lineSize="5dp"
                             app:line="@color/colorPrimary"/>
 
@@ -303,95 +185,120 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:padding="10dp">
+                                android:orientation="horizontal">
 
-                                <!-- konten acara -->
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textSize="18dp"
-                                    android:textStyle="bold"
-                                    android:text="Welcoming Session"/>
-
+                                <!-- gambar agenda -->
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/welcoming_session"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="-5dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <!-- END// gambar agenda -->
+                                <!-- Linier layout untuk judul acara & isi -->
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
 
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/ic_wc_black_24dp"
-                                        android:tint="@color/colortext"
-                                        />
-
+                                    <!-- judul agenda -->
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Bebas Rapi Beratribut FLS"/>
+                                        android:textSize="18dp"
+                                        android:textStyle="bold"
+                                        android:text="WELCOMING SESSION"/>
+                                    <!-- END// konten judul agenda -->
 
-                                </LinearLayout>
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/ic_time"
-                                        android:tint="@color/colortext"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
+                                    <!-- Pakaian yang dipakai -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="08:00 - 09.00 WIB"/>
+                                        android:orientation="horizontal">
 
-                                </LinearLayout>
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_wc_black_24dp"
+                                            android:tint="@color/colortext"
+                                            />
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Bebas, Rapi, Bersepatu, Sopan dan Atribut FLS"/>
 
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/nav_agenda"
-                                        android:tint="@color/colortext"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
+                                    </LinearLayout>
+                                    <!-- END// Pakaian yang dipakai -->
+                                    <!-- Jam Acara -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="13 Mei 2017"/>
+                                        android:orientation="horizontal">
 
-                                </LinearLayout>
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_time"
+                                            android:tint="@color/colortext"
+                                            />
 
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="07:30 - 09.30 WIB"/>
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/ic_place_black_24dp"
-                                        android:tint="@color/colortext"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
+                                    </LinearLayout>
+                                    <!-- END// Jam Acara -->
+                                    <!-- Tanggal Acara -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="Balaikota Semarang"/>
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/nav_agenda"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sabtu, 9 September 2017"/>
+
+                                    </LinearLayout>
+                                    <!-- END// Tanggal Acara -->
+                                    <!-- lokasi -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_place_black_24dp"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Aula BKK, Semarang"/>
+
+                                    </LinearLayout>
+                                    <!-- END// lokasi -->
+
 
                                 </LinearLayout>
-
-
+                                <!-- END// Linier layout untuk judul acara & isi -->
                             </LinearLayout>
+
 
                         </android.support.v7.widget.CardView>
 
@@ -403,11 +310,10 @@
                         android:orientation="horizontal">
 
                         <com.github.vipulasri.timelineview.TimelineView
-                            android:id="@+id/time_marker_done"
                             android:layout_width="70dp"
                             android:layout_height="match_parent"
                             app:markerSize="20dp"
-                            app:marker="@drawable/ic_radio_button_unchecked_black_24dp"
+                            app:marker="@drawable/agenda_done"
                             app:lineSize="5dp"
                             app:line="@color/colorPrimary"/>
 
@@ -419,17 +325,175 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <!-- gambar agenda -->
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/idea_summit"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="-5dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <!-- END// gambar agenda -->
+                                <!-- Linier layout untuk judul acara & isi -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <!-- judul agenda -->
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold"
+                                        android:text="IDEA SUMMIT"/>
+                                    <!-- END// konten judul agenda -->
+
+                                    <!-- Pakaian yang dipakai -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_wc_black_24dp"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Kaos FLS, Bersepatu dan Atribut FLS"/>
+
+                                    </LinearLayout>
+                                    <!-- END// Pakaian yang dipakai -->
+                                    <!-- Jam Acara -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_time"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="09:30 - 12.00 WIB"/>
+
+                                    </LinearLayout>
+                                    <!-- END// Jam Acara -->
+                                    <!-- Tanggal Acara -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/nav_agenda"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sabtu, 9 September 2017"/>
+
+                                    </LinearLayout>
+                                    <!-- END// Tanggal Acara -->
+                                    <!-- lokasi -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_place_black_24dp"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sesuai Room Masing-masing"/>
+
+                                    </LinearLayout>
+                                    <!-- END// lokasi -->
+
+
+                                </LinearLayout>
+                                <!-- END// Linier layout untuk judul acara & isi -->
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.github.vipulasri.timelineview.TimelineView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        app:markerSize="20dp"
+                        app:marker="@drawable/agenda_done"
+                        app:lineSize="5dp"
+                        app:line="@color/colorPrimary"/>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/cardviewTimeline">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- gambar agenda -->
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="90dp"
+                                android:src="@drawable/workshop_class"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="-5dp"
+                                android:layout_marginBottom="10dp"/>
+                            <!-- END// gambar agenda -->
+                            <!-- Linier layout untuk judul acara & isi -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:orientation="vertical"
                                 android:padding="10dp">
 
-                                <!-- konten acara -->
+                                <!-- judul agenda -->
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textSize="18dp"
                                     android:textStyle="bold"
-                                    android:text="Welcoming Session"/>
+                                    android:text="WORKSHOP CLASS"/>
+                                <!-- END// konten judul agenda -->
 
+                                <!-- Pakaian yang dipakai -->
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -445,9 +509,11 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Bebas Rapi Beratribut FLS"/>
+                                        android:text="Kaos FLS, Bersepatu dan Atribut FLS"/>
 
                                 </LinearLayout>
+                                <!-- END// Pakaian yang dipakai -->
+                                <!-- Jam Acara -->
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -463,10 +529,11 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="08:00 - 09.00 WIB"/>
+                                        android:text="13.00 - 16.30 WIB"/>
 
                                 </LinearLayout>
-
+                                <!-- END// Jam Acara -->
+                                <!-- Tanggal Acara -->
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -482,11 +549,11 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="13 Mei 2017"/>
+                                        android:text="Sabtu, 9 September 2017"/>
 
                                 </LinearLayout>
-
-
+                                <!-- END// Tanggal Acara -->
+                                <!-- lokasi -->
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -502,12 +569,156 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Balaikota Semarang"/>
+                                        android:text="Sesuai Room Masing-masing"/>
 
                                 </LinearLayout>
+                                <!-- END// lokasi -->
 
 
                             </LinearLayout>
+                            <!-- END// Linier layout untuk judul acara & isi -->
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.github.vipulasri.timelineview.TimelineView
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            app:markerSize="20dp"
+                            app:marker="@drawable/agenda_done"
+                            app:lineSize="5dp"
+                            app:line="@color/colorPrimary"/>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/cardviewTimeline">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <!-- gambar agenda -->
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/gala_fls"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="-5dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <!-- END// gambar agenda -->
+                                <!-- Linier layout untuk judul acara & isi -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <!-- judul agenda -->
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold"
+                                        android:text="GALA FUTURE LEADER"/>
+                                    <!-- END// konten judul agenda -->
+
+                                    <!-- Pakaian yang dipakai -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_wc_black_24dp"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Kemeja, Berjas, Bersepatu dan Atribut FLS"/>
+
+                                    </LinearLayout>
+                                    <!-- END// Pakaian yang dipakai -->
+                                    <!-- Jam Acara -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_time"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="18.00 - 22.30 WIB"/>
+
+                                    </LinearLayout>
+                                    <!-- END// Jam Acara -->
+                                    <!-- Tanggal Acara -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/nav_agenda"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sabtu, 9 September 2017"/>
+
+                                    </LinearLayout>
+                                    <!-- END// Tanggal Acara -->
+                                    <!-- lokasi -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_place_black_24dp"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Semarang"/>
+
+                                    </LinearLayout>
+                                    <!-- END// lokasi -->
+
+
+                                </LinearLayout>
+                                <!-- END// Linier layout untuk judul acara & isi -->
+                            </LinearLayout>
+
 
                         </android.support.v7.widget.CardView>
 
@@ -519,11 +730,10 @@
                         android:orientation="horizontal">
 
                         <com.github.vipulasri.timelineview.TimelineView
-                            android:id="@+id/time_marker_done"
                             android:layout_width="70dp"
                             android:layout_height="match_parent"
                             app:markerSize="20dp"
-                            app:marker="@drawable/ic_radio_button_unchecked_black_24dp"
+                            app:marker="@drawable/agenda_done"
                             app:lineSize="5dp"
                             app:line="@color/colorPrimary"/>
 
@@ -535,99 +745,265 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:padding="10dp">
+                                android:orientation="horizontal">
 
-                                <!-- konten acara -->
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textSize="18dp"
-                                    android:textStyle="bold"
-                                    android:text="Welcoming Session"/>
-
+                                <!-- gambar agenda -->
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/creative_campaign"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="-5dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <!-- END// gambar agenda -->
+                                <!-- Linier layout untuk judul acara & isi -->
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
 
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/ic_wc_black_24dp"
-                                        android:tint="@color/colortext"
-                                        />
-
+                                    <!-- judul agenda -->
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Bebas Rapi Beratribut FLS"/>
+                                        android:textSize="18dp"
+                                        android:textStyle="bold"
+                                        android:text="IDEA TRIAL"/>
+                                    <!-- END// konten judul agenda -->
 
-                                </LinearLayout>
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/ic_time"
-                                        android:tint="@color/colortext"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
+                                    <!-- Pakaian yang dipakai -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="08:00 - 09.00 WIB"/>
+                                        android:orientation="horizontal">
 
-                                </LinearLayout>
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_wc_black_24dp"
+                                            android:tint="@color/colortext"
+                                            />
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Bebas, Rapi, Bersepatu dan Atribut FLS"/>
 
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/nav_agenda"
-                                        android:tint="@color/colortext"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
+                                    </LinearLayout>
+                                    <!-- END// Pakaian yang dipakai -->
+                                    <!-- Jam Acara -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="13 Mei 2017"/>
+                                        android:orientation="horizontal">
 
-                                </LinearLayout>
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_time"
+                                            android:tint="@color/colortext"
+                                            />
 
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="08.00 - 09.00 WIB"/>
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/ic_place_black_24dp"
-                                        android:tint="@color/colortext"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
+                                    </LinearLayout>
+                                    <!-- END// Jam Acara -->
+                                    <!-- Tanggal Acara -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="Balaikota Semarang"/>
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/nav_agenda"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Minggu, 10 September 2017"/>
+
+                                    </LinearLayout>
+                                    <!-- END// Tanggal Acara -->
+                                    <!-- lokasi -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_place_black_24dp"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Semarang"/>
+
+                                    </LinearLayout>
+                                    <!-- END// lokasi -->
+
 
                                 </LinearLayout>
-
-
+                                <!-- END// Linier layout untuk judul acara & isi -->
                             </LinearLayout>
+
 
                         </android.support.v7.widget.CardView>
 
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.github.vipulasri.timelineview.TimelineView
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            app:markerSize="20dp"
+                            app:marker="@drawable/agenda_done"
+                            app:lineSize="5dp"
+                            app:line="@color/colorPrimary"/>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/cardviewTimeline">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <!-- gambar agenda -->
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/grand_summit"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="-5dp"
+                                    android:layout_marginBottom="10dp"/>
+                                <!-- END// gambar agenda -->
+                                <!-- Linier layout untuk judul acara & isi -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <!-- judul agenda -->
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold"
+                                        android:text="GRAND SUMMIT"/>
+                                    <!-- END// konten judul agenda -->
+
+                                    <!-- Pakaian yang dipakai -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_wc_black_24dp"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Kaos FLS, Bersepatu dan Atribut FLS"/>
+
+                                    </LinearLayout>
+                                    <!-- END// Pakaian yang dipakai -->
+                                    <!-- Jam Acara -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_time"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="09.00 - 16.00 WIB"/>
+
+                                    </LinearLayout>
+                                    <!-- END// Jam Acara -->
+                                    <!-- Tanggal Acara -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/nav_agenda"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Minggu, 10 September 2017"/>
+
+                                    </LinearLayout>
+                                    <!-- END// Tanggal Acara -->
+                                    <!-- lokasi -->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_place_black_24dp"
+                                            android:tint="@color/colortext"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Semarang"/>
+
+                                    </LinearLayout>
+                                    <!-- END// lokasi -->
+
+
+                                </LinearLayout>
+                                <!-- END// Linier layout untuk judul acara & isi -->
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
