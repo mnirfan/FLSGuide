@@ -93,6 +93,8 @@ public class ListInfo extends ListFragment {
 
             TextView nameTextView = (TextView) convertView.findViewById(R.id.textview_name);
             nameTextView.setText(c.getmInfo());
+            TextView dateInfo = (TextView) convertView.findViewById(R.id.date_info);
+            dateInfo.setText(c.getmTanggal());
             TextView pakaianTextView = (TextView) convertView.findViewById(R.id.textview_pakaian);
             pakaianTextView.setText(c.getmDeskripsi());
 

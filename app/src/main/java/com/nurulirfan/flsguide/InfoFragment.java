@@ -9,6 +9,7 @@ import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 public class InfoFragment extends Fragment {
 
@@ -21,7 +22,7 @@ public class InfoFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     switch (view.getId()){
-                        case R.id.cv_info:
+                        case 1:
 
                             break;
                     }
@@ -34,16 +35,19 @@ public class InfoFragment extends Fragment {
         // Inflate the layout for this fragment
         View inputFragmentView = inflater.inflate(R.layout.fragment_info, container, false);
 
-        CardView greeting = (CardView) inputFragmentView.findViewById(R.id.cv_info);
-        greeting.setOnClickListener(
-                new CardView.OnClickListener(){
-                    @Override
-                    public void onClick(View view) {
-                        Intent i = new Intent(getContext(), BeforeParseActivity.class);
-                        startActivity(i);
-                    }
-                }
-        );
+        ListView lv = (ListView) inputFragmentView.findViewById(R.id.list_notif);
+
+
+//        CardView greeting = (CardView) inputFragmentView.findViewById(R.id.cv_info);
+//        greeting.setOnClickListener(
+//                new CardView.OnClickListener(){
+//                    @Override
+//                    public void onClick(View view) {
+//                        Intent i = new Intent(getContext(), BeforeParseActivity.class);
+//                        startActivity(i);
+//                    }
+//                }
+//        );
 
         return inputFragmentView;
     }
