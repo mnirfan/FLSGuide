@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 public class AboutFragment extends Fragment {
 
@@ -19,7 +20,16 @@ public class AboutFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_about, container, false);
+        View info_view = inflater.inflate(R.layout.fragment_about, container, false);
+        Button site_button = (Button) info_view.findViewById(R.id.btn_website_fls);
+        site_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://futureleadersummit.org"));
+                startActivity(i);
+            }
+        });
+        return info_view;
     }
 
 }

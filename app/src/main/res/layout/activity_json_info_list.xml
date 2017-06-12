@@ -1,33 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
 
-        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:padding="10dp"
-            android:id="@+id/textview_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold" />
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20dp">
 
-        <TextView
-            android:id="@+id/date_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+           <!-- Home -->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="20dp">
 
-        <TextView
-            android:id="@+id/textview_pakaian"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            />
+               <TextView
+                   android:id="@+id/textview_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="18dp"
+                   android:text="Pengambilan Atribut FLS"
+                   android:textStyle="bold"
+                   android:layout_marginBottom="10dp"/>
 
+               <TextView
+                   android:id="@+id/textview_pakaian"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp"
+                   style="@style/fontApplikasi"/>
 
-    </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/ic_time"
+                       android:tint="@color/colortext"
+                       />
+
+                   <TextView
+                       android:id="@+id/date_info"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </android.support.v7.widget.CardView>
+
+   </LinearLayout>
 </ScrollView>
