@@ -21,7 +21,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
         </activity>
 
-        <activity android:name=".GreetingActivity">
+            <activity android:name=".GreetingActivity">
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+
+        <activity android:name=".WelcomingActivity">
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+
+        <activity android:name=".PraeventActivity">
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+
+        <activity android:name=".IdeaSummit">
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+
+        <activity android:name=".WorkshopClassActivity">
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+
+        <activity android:name=".GalaFutureLeaderActivity">
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+
+        <activity android:name=".IdeaTrialActivity">
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+
+        <activity android:name=".GrandSummitActivity">
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </activity>
